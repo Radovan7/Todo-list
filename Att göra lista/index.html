@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+            <h1 id="title">ATT GÖRA LISTA</h1>
+            <p>
+                <label for="new-task">LÄGG TILL</label>
+                <input id="new-task" type="text">
+                <button id="add-button" >Lägg till</button>
+                <button id="clear-text" >Återställ</button>
+                <div id="error-message">
+                </div>
+            </p>
+        </div>
+        <div class="section2">
+            <h3>Att göra</h3>
+            <ul id="incomplete-tasks">
+
+            </ul>
+        </div>
+        <div class="section3">
+            <h3>Färdiga</h3>
+            <ul id="completed-tasks">
+                <li>
+                    <label>Test</label>
+                    <input type="text">
+                    <button class="edit">Ändra</button>
+                    <button class="delete">Radera</button>
+                </li>
+            </ul>
+        </div>
+        <div class="section4">
+            <button id="clear">
+            <p>Rensa</p>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
